@@ -1,0 +1,122 @@
+#header{
+  background-image: url("https://www.carillontower.com/-/media/rj/affiliate-sites/carillon-tower/affiliates/calrivest-affiliate-header-1600x400.jpg?w=100%25&la=en");
+  background-repeat: no-repeat;
+  background-position: top;
+  height:180px;
+  position: fixed;
+  top:0px;
+  right:0px;
+  width:100%;
+  border-bottom-style:solid;
+  z-index:5;
+}
+.right{
+  background-color:red;
+  width:140px;
+  height:40px;
+  float:right;
+  text-align:center;
+  vertical-align: middle;
+  line-height: 40px;
+  position:absolute;
+  right:40px;
+  border-radius: 5px;
+}
+#address{
+  margin-top:30px;
+}
+#telephone{
+  margin-top:90px;
+}
+#mbody{
+  
+    position: relative;
+    top: 220px;
+}
+#mtitle{
+  position:absolute;
+  left:200px;
+  top:35px;
+  font-size: 40px;
+}
+.topnav {
+    position:absolute;
+    left:150px;
+    top:150px;
+    overflow: hidden;
+}
+.topnav a {
+    float: left;
+    color: orange;
+    text-align: center;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.topnav a:hover {
+    background-color: orange;
+    color: black;
+}
+#trips{
+	text-align: center;
+	display: table;
+	margin: 0 auto;
+	margin-bottom: 50px;
+
+}
+.anchor{
+  display: block;
+  height: 180px; 
+  margin-top: -180px; 
+  visibility: hidden;
+}
+
+table{
+	width:600px;
+	border-collapse: collapse;
+
+}
+th, td {
+    border: 2px solid #dddddd;  
+    padding: 10px;	
+    text-align: left;
+}
+
+#offer-body{
+	border:1px dashed red;
+	border-radius: 5px;
+	margin-bottom: 50px;
+	
+}
+
+#offer-img{
+	width:300px;
+	float: left;
+	margin-right: 30px;
+/*	margin-bottom: 30px; */
+
+}
+#offer-info{
+	padding-top: 10px;
+	margin-bottom: 60px; 
+	
+}
+#offer-info ul {
+    padding-left: 1.2em;
+    overflow: hidden;
+}
+#contact, #about{
+	margin-bottom: 50px;
+	border-left-width: 5px;
+	border-left-color: gray;
+	border-left-style: solid;
+	padding-left: 10px;
+	background-color: rgb(232, 232, 232);
+}
+
+#footer{
+	
+	text-align:center;
+	background-color: rgb(232, 232, 232);
+    clear: both;
+}
