@@ -77,18 +77,18 @@ table {
 
 .info td:nth-child(1){
     font-weight: 900; 
-    width: 30%;
-   }
-   .info{
-       margin-left: 30px;
-   }
-   main a[target="_blank"]::after{
-       content:"⤴";
-   }
-   main a{
-    text-decoration: none;
-    color: #CE5252;
-   }
-   main a:hover{
-       color:#973939
-   }
+    width: 50%;
+}
+.info{
+    margin-left: 30px;
+}
+main a[target="_blank"]::after{
+    content:"⤴";
+}
+main a{
+   text-decoration: none;
+   color: #CE5252;
+}
+main a:hover{
+   color:#973939
+}
