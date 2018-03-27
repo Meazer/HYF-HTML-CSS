@@ -1,0 +1,30 @@
+  267  ls
+  268  mkdir cli-hw1
+  269  touch blank
+  270  echo "hello" > greetings.txt
+  271  echo "hello" >> greetings.txt
+  272  echo "hello" >> greetings.txt
+  273  echo "hello" >> greetings.txt
+  274  echo "hello" >> greetings.txt
+  275  cat greetings.txt 
+  276  cp --help
+  277  for file in 1.txt 2.txt 3.txt 4.txt 5.txt ; do cp greetings.txt "$file" ; done 
+  278  ls
+  279  cat 1.txt
+  280  echo "cat" > pets.txt
+  281  echo "dog" >> pets.txt
+  282  echo "hamster" >> pets.txt
+  283  cat pets.txt 
+  284  echo "cat" > commands.txt
+  285  echo "ls" > commands.txt
+  286  echo "cat" > commands.txt
+  287  echo "ls" >> commands.txt
+  288  echo "pwd" >> commands.txt
+  289  ls
+  290  for file in 1.txt 2.txt 3.txt 4.txt 5.txt blank commands.txt greetings.txt pets.txt ; do mv "$file" cli-hw1/"$file" ; done 
+  291  ls
+  292  ls cli-hw1/
+  293  history | less
+  294  history | tail 30
+  295  history | tail -30
+  296  history | tail -30 > commands-history.txt
