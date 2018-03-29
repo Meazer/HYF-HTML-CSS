@@ -1,0 +1,10 @@
+1- create a hidden file:
+      touch .hidden.txt
+  display hidden files:
+      ls -a 
+2- create muliple directories:
+      mkdir -p these/folders/are/just/for/fun
+3- wc -c fun:
+      count also the new line characters
+4- append something in the file *WITHOUT* a newline character:
+      echo -n "Hello" > greeting.txt
