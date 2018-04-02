@@ -1,10 +1,8 @@
 body {
     width: 90%;
     max-width: 1400px;
-    margin: 0 auto;
-    
+    margin: 0 auto;    
 }
-
 
 ul {
     padding: 0;
@@ -51,7 +49,7 @@ h1, h2, h3, p{
 
 @media only screen and (min-width:481px) and (max-width:768px){
     body{
-        width:95%;
+        width:96%;
         margin: 0 auto;
     }
     
@@ -69,7 +67,7 @@ h1, h2, h3, p{
 
 @media only screen and (max-width:480px){
     body{
-        width:98%;
+        width:96%;
         margin: 0 auto;
     }
     #grid-floats .grid-item{
@@ -80,5 +78,6 @@ h1, h2, h3, p{
     }    
     #grid-floats .grid-item:nth-of-type(1){
         width:100%;
+        /* margin: 0 auto; */
     }
 }
