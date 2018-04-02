@@ -13,6 +13,7 @@ h1, h2, h3, p{
     text-align: center;
 }  
 
+
 #grid-floats .grid-item{
     width: calc(100% / 4 - 20px);
     margin: 10px;
@@ -23,7 +24,8 @@ h1, h2, h3, p{
     box-sizing: border-box;
     border: 2px solid red;
     border-radius: 6px;
-    /* background-color: bisque; */
+    background-color: white;
+    transition: transform 200ms ease-in;
 }
 #grid-floats .grid-item:nth-of-type(1){
     width: calc(100% / 2 - 20px);
@@ -33,13 +35,25 @@ h1, h2, h3, p{
     clear: both;
     display:block;
 } 
-.grid-item:nth-of-type(-n+7):nth-of-type(even), .grid-item:nth-of-type(n+8):nth-of-type(odd){
-    background-color: bisque;
+#grid-floats .grid-item:nth-of-type(-n+7):nth-of-type(even), #grid-floats .grid-item:nth-of-type(n+8):nth-of-type(odd){
+    background-color: #ffe4c4;
 }
 .grid-item h3{
     height: 10%;
 }
 
+.grid-item:hover, .grid-item:focus, .grid-item:active {
+    box-shadow: 0px 0px 50px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+  }
 
 #grid-floats .grid-item img{
     max-width:80%;
