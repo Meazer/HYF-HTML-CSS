@@ -36,7 +36,9 @@ h1, h2, h3, p{
 .grid-item:nth-of-type(-n+7):nth-of-type(even), .grid-item:nth-of-type(n+8):nth-of-type(odd){
     background-color: bisque;
 }
-
+.grid-item h3{
+    height: 10%;
+}
 
 
 #grid-floats .grid-item img{
@@ -72,6 +74,7 @@ h1, h2, h3, p{
     }
     #grid-floats .grid-item{
         width: calc(100% / 2 - 8px);
+        /* height: 580px; */
         margin:4px;
         padding:4px;
     }    
