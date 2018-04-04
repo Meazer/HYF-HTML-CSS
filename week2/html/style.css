@@ -2,6 +2,7 @@ body {
     width: 90%;
     max-width: 1400px;
     margin: 0 auto;    
+    background: url("images/background.jpeg") no-repeat fixed center;
 }
 
 ul {
@@ -13,6 +14,20 @@ h1, h2, h3, p{
     text-align: center;
 }  
 
+h2{
+    font-size: 2rem;
+    line-height: 3em;
+    background-color: yellow;
+    border-radius: 0px 24px;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+section{
+    margin-bottom: 10%;
+}
 .grid-item img{ 
     max-width:80%;
     height: auto ;
@@ -38,13 +53,9 @@ h1, h2, h3, p{
     transform: scale(1.1);
 }
 
-
-#grid-floats .grid-item{
+.grid-item{
     width: calc(100% / 4 - 20px);
     margin: 10px;
-    float: left;
-    overflow: auto;
-    height:550px;
     padding: 8px;
     box-sizing: border-box;
     border: 2px solid red;
@@ -52,114 +63,58 @@ h1, h2, h3, p{
     background-color: white;
     transition: transform 200ms ease-in;
 }
-#grid-floats .grid-item:nth-of-type(1){
+
+.grid-item:nth-of-type(-n+7):nth-of-type(even),  .grid-item:nth-of-type(n+8):nth-of-type(odd){
+    background-color: #ffe4c4;
+}
+
+.grid-item:nth-of-type(1){
     width: calc(100% / 2 - 20px);
 }
+
+#grid-floats .grid-item{   
+    float: left;
+    overflow: auto;
+    height:550px;
+}
+
 #grid-floats::after{
     content: "";
     clear: both;
     display:block;
 } 
-#grid-floats .grid-item:nth-of-type(-n+7):nth-of-type(even), #grid-floats .grid-item:nth-of-type(n+8):nth-of-type(odd){
-    background-color: #ffe4c4;
-}
 
-
-
-
-/* #grid-floats */
-
-
-@media only screen and (min-width:481px) and (max-width:768px){
-    body{
-        width:96%;
-        margin: 0 auto;
-    }
-    
-    #grid-floats .grid-item{
-        width: calc(100% / 3 - 12px);
-        margin: 6px;
-        padding: 6px;
-        height: 580px;
-        /* min-width: 125px; */
-    }    
-    #grid-floats .grid-item:nth-of-type(-n+2){
-        width: calc(100% / 2 - 12px);
-    }
-}
-
-@media only screen and (max-width:480px){
-    body{
-        width:96%;
-        margin: 0 auto;
-    }
-    #grid-floats .grid-item{
-        width: calc(100% / 2 - 8px);
-        /* height: 580px; */
-        margin:4px;
-        padding:4px;
-    }    
-    #grid-floats .grid-item:nth-of-type(1){
-        width:100%;
-        /* margin: 0 auto; */
-    }
-}
-
-/*---------------------------------------------- flex-box ---------------------------------------------- */
-#grid-flex .grid-item{
-    width: calc(100% / 4 - 20px);
-    margin: 10px;
-    /* float: left; */
-    /* overflow: auto; */
-    /* height:550px; */
-    padding: 8px;
-    box-sizing: border-box;
-    border: 2px solid red;
-    border-radius: 6px;
-    background-color: white;
-    transition: transform 200ms ease-in;
-    /* flex: 1 0 calc(100% / 4 - 20px); */
-}
 #grid-flex{
     display: flex;
     flex-wrap: wrap;
 }
-#grid-flex .grid-item:nth-of-type(1){
-    width: calc(100% / 2 - 20px);
-   /* flex: 2 0 calc(100% / 2 - 20px); */
-}
+
 
 @media only screen and (min-width:481px) and (max-width:768px){
-    body{
-        width:96%;
-        margin: 0 auto;
-    }
-    
-    #grid-flex .grid-item{
+    body{ width:96%; margin: 0 auto; }
+    .grid-item{
         width: calc(100% / 3 - 12px);
         margin: 6px;
         padding: 6px;
-        /* height: 580px; */
-        /* min-width: 125px; */
     }    
-    #grid-flex .grid-item:nth-of-type(-n+2){
-        width: calc(100% / 2 - 12px);
-    }
+    .grid-item:nth-of-type(-n+2){ width: calc(100% / 2 - 12px); }
+    #grid-floats .grid-item{ height: 580px; } 
 }
 
 @media only screen and (max-width:480px){
-    body{
-        width:96%;
-        margin: 0 auto;
-    }
-    #grid-flex .grid-item{
+    body{ width:96%;  margin: 0 auto;}
+    .grid-item{
         width: calc(100% / 2 - 8px);
-        /* height: 580px; */
         margin:4px;
         padding:4px;
     }    
-    #grid-flex .grid-item:nth-of-type(1){
-        width:100%;
-        /* margin: 0 auto; */
-    }
+    .grid-item:nth-of-type(1){  width:100%; }
+}
+
+#grid-flex::after{
+    content: "designed by Meazer";
+    text-align: center;
+    width:100%;
+    font-size: 0.8rem;
+    margin-top: 5%;
 }
