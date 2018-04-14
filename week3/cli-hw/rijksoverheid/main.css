@@ -1,0 +1,565 @@
+
+body{
+    margin: 0px;
+    font-family: "RO Sans",Calibri,sans-serif;
+    font-weight: normal;
+    font-size: 1.125rem;
+    line-height: 1.625;
+}
+html {
+    box-sizing: border-box;
+}
+* , *:before, *:after {
+    box-sizing: inherit;
+}
+h1, h2, h3, p, ul, li, div{
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    list-style: none;
+    text-align: left;
+    vertical-align: top;
+}
+
+.main-wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+}
+.header{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+header .logo {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1200px;
+    
+}
+.logo .wrapper {
+    margin: 0 0 0 50%;
+}
+.logo .wrapper img {
+    display: inline-block;
+    margin-left: -22px;
+    margin-bottom: 10px;
+}
+.navbar {
+    background-color: #01689b;
+    min-height: 70px;
+    margin-left: -15px;
+    margin-right: -15px;
+    
+}
+.navBar:after {
+    content: " ";
+    display: table;
+}
+.navbar .wrapper{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1200px;
+    position: relative;
+    padding-top: 10px;
+}
+.navbar .wrapper::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 1.4em;
+    letter-spacing: .03rem;
+}
+nav.nav-menu {
+    float: right;
+    width: calc(2 * 100% / 3);
+    padding: 8px 0 10px 0;
+    display: none;
+}
+.nav-menu a {
+    margin: 5px 0 0 30px;
+    display: inline-block;
+    width: auto;
+    border: 0;
+    font-size: 1.2rem;
+}
+#search{
+    margin: 10px 0 15px 0;
+    width:100%;
+    min-width: 48px;
+    height: 48px;
+    position: relative;
+}
+#search input{
+    width: 100%;
+    height:100%;
+}
+#search button{
+    float: right;
+    background: black;
+    height: 48px;
+    width: 48px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+    line-height: 1px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.125em;
+    text-indent: -9999px;
+    border: none;
+    color: white;
+    background-image: url("./images/search.png");
+    background-size: cover;
+}
+/* #search button::before{
+    color: white;
+} */
+main{
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-bottom: 30px;
+
+}
+.header-image{
+    background-image: url("./images/header.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    min-height: 190px;
+}
+.header-image .wrapper{
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1200px;
+    padding: 25px 15px 50px 15px;
+}
+.header-image .wrapper .topTaskNavigation {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #fff;
+    padding: 15px 15px 20px 15px;
+}
+
+.topTaskNavigation ul {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    list-style: none;
+    list-style-type: none;  
+}
+
+.more-news::before,.topTaskNavigation ul li a::before {
+        position: relative;
+        /* top: 3pt; Uncomment this to lower the icons as requested in comments*/
+        content: "";
+        display: inline-block;
+        /* By using an em scale, the arrows will size with the font */
+        width: 0.5em;
+        height: 0.5em;
+        font-size: 16px;
+        border-right: 0.2em solid #01689b;
+        border-top: 0.2em solid #01689b;
+        transform: rotate(45deg);
+        margin-right: 1em;
+}
+
+.more-news::visited, .topTaskNavigation ul li a:visited {
+    color: #767676;
+}
+.more-news{
+    margin-left: 15px;
+}
+.more-news:hover, .topTaskNavigation ul li a:hover{
+    color: #154273;
+}
+.more-news, .topTaskNavigation ul li a {
+    position: relative;
+    display: block;
+    /* padding-left: 20px; */
+    font-weight: bold;
+    color: #01689b;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    text-decoration: none;
+    width: auto;
+    line-height: 1.625rem;
+    word-wrap: break-word;
+}
+.topics .wrapper{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 1200px;
+    padding-top: 40px;
+    padding-bottom: 15px;
+
+}
+.topics{
+    background-color: #f3f3f3;
+    
+}
+a{
+    text-decoration: none;
+}
+a h2{
+    color: #01689b;
+    font-size: 1.3125em;
+    font-weight: bold;
+    line-height: 1.2381;
+}
+a p{
+    color: black;
+    line-height: 1.375em;
+    font-size: 100%;
+}
+.topic{
+    margin: 0 0 25px 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.topic .content{
+    display: block;
+    margin-bottom: 0;
+    width: auto;
+    padding: 0;
+}
+.articles{
+    margin-top: 60px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+}
+.articles article{
+    margin-bottom: 40px;
+}
+.articles img{
+    width: 100%;
+    margin: 5px 0 15px 0;
+}
+.articles h3, .news-item h3{
+    color: #01689b;
+    font-size: 1.75rem;
+    line-height: 2rem;
+    font-weight: normal;
+    margin: 0 0 10px 0;
+}
+.articles p{
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.375rem;
+    margin-bottom: .8125em;
+}
+.articles a:hover h3, .news-item a:hover h3{
+    color: #154273;
+	text-decoration: underline
+}
+.articles article{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.news{
+    margin-bottom: 25px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.news h2 {
+    margin: 0 15px 20px 15px;
+    font-size: 1.625rem;
+    padding-top: 10px;
+    border-top: 1px solid #e1e1e1;
+
+}
+.news-item{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 40px;
+}
+p .publDate {
+    font-weight: bold;
+    margin-right: 10px;
+}
+.news-item p{
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.375rem;
+    margin-bottom: .8125em;
+}
+.aside {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;  
+
+} 
+/* .aside::after{
+    content: "";
+    clear: both;
+    display: block;
+} */
+.banner{
+    margin-bottom: 60px; 
+    padding-left: 15px;
+    padding-right: 15px;
+    width: calc(100% - 30px);
+}
+.banner a{
+    display: block;
+}
+.banner .st0 {
+    fill: #fff;
+    stroke: #cbd2e3;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+.banner .st3 {
+    font-size: 22px;
+    font-family: "RO Sans",Calibri,Verdana,sans-serif;
+}
+
+.banner .st2 {
+    font-weight: bold;
+    font-family: "RO Sans",Calibri,Verdana,sans-serif;
+}
+.banner .st1 {
+    fill: #1b5e84;
+}
+
+
+.banner .st4 {
+    font-size: 31px;
+    font-family: "RO Sans",Calibri,Verdana,sans-serif;
+    text-decoration: none;
+}
+.banner .st4 {
+    font-size: 31px;
+    font-family: "RO Sans",Calibri,Verdana,sans-serif;
+    text-decoration: none;
+}
+
+.banner .st2 {
+    font-weight: bold;
+    font-family: "RO Sans",Calibri,Verdana,sans-serif;
+}
+.banner .st1 {
+    fill: #1b5e84;
+}
+.banner .st6 {
+    font-size: 21px;
+    font-family: "RO Sans",Calibri,Verdana,sans-serif;
+}
+
+.banner .st5 {
+    font-weight: normal;
+    font-family: "RO Sans",Calibri,Verdana,sans-serif;
+}
+
+.stijl01 {
+    fill: #FFFFFF;
+    stroke: #CBD2E3;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+
+.stijl02 {
+    fill: #111111;
+    font-size: 23px;
+    font-family: "RO Sans", Calibri, Verdana, sans-serif;
+}
+                                                                    
+.stijl03 {
+fill: #a90061;
+font-weight: bold;
+font-size: 31px;
+    font-family: "RO Sans", Calibri, Verdana, sans-serif;
+}
+footer {
+    background-color: #01689b;
+    border: 0;
+    padding-bottom: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+footer .wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 1200px;
+}
+.payoff, .column{
+    float: left;
+    padding-top: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+.payoff{
+    width: calc(100% - 30px);
+}
+.column{
+    width: calc(50% - 30px);
+}
+footer .wrapper::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.payoff span {
+    display: block;
+    padding-bottom: 25px;
+    color: #fff;
+    font-size: 1.5em;
+    font-family: "RO Serif";
+    font-style: italic;
+    font-weight: normal;
+    line-height: 1.2381;
+}
+.wrapper .column h2 {
+    margin: 8px 0 5px 0;
+    padding-top: 0;
+    color: #fff;
+    font-weight: normal;
+    font-size: 1.25em;
+    border: 0;
+    line-height: 1.2381;
+}
+.wrapper .column ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.column a{
+    color: #fff;
+}
+.column a:hover{
+    text-decoration: underline;
+}
+.column a:visited{
+    color: #767676;
+}
+.languages{
+    background-color: #fff;
+}
+.languages .wrapper {
+    padding: 30px 15px;
+}
+.languages .wrapper ul {
+    text-align: center;
+}
+.languages .wrapper ul li {
+    display: inline-block;
+    float: none;
+    width: auto;
+}
+.languages .wrapper ul li a {
+    padding: 5px 10px 5px 10px;
+    background: 0;
+    border: 1px solid #b2d7ee;
+    color: #007bc7;
+    margin: 5px 5px 5px 0;
+    font-size: .95em;
+    text-decoration: none;
+    float: left;
+}
+.languages .wrapper ul li.selected {
+    padding: 5px 10px 5px 10px;
+    margin: 5px 5px 5px 0;
+    border: 0;
+    color: #000;
+    font-weight: 700;
+}
+.articles .wrapper, .news .wrapper, .aside, .topics .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (min-width:481px){
+    .news .wrapper .news-item, .aside .banner{
+        width: calc(100% / 2 );
+    }
+    .articles .wrapper article{width: calc(100% / 2 - 30px);
+    }
+}
+@media (min-width: 768px){
+    #search{ position: absolute; bottom: -120px; width: 32.5%; right:15px;}
+    .topics .topic{
+        width: calc(100% / 2);
+    }
+    .navbar .nav-menu{display: block; }
+    #nav-button{display: none;}
+    .payoff{ width: calc(100% / 2 - 30px)}
+    .column{ width: calc(100% / 4 - 30px)}
+    .header-image {min-height: 210px;}
+    .header-image .wrapper .topTaskNavigation{width: calc(100% / 3)    }
+    .logo .wrapper img {content: url("https://www.rijksoverheid.nl/binaries/content/gallery/rijksoverheid/channel-afbeeldingen/logos/logo-ro.svg")}
+}
+@media (min-width: 992px){
+    .news .wrapper .news-item, .aside .banner{
+        width: calc(100% / 3 );
+    }
+    .articles .wrapper article{max-width: calc(100% / 3 - 30px);}
+    .topics .topic{
+        width: calc(100% / 4 );
+    }
+}
+@media (min-width: 1200px){
+    .header-image .wrapper .topTaskNavigation {
+        padding: 25px;
+        margin-left: -25px;
+    }
+    /* .navbar .wrapper a{    font-size: 1.625rem;    } */
+} 
+/* #nav-button{
+    position: absolute;
+    top: 10px;
+    right: 21px;
+    width: 36px;
+    height: 32px;
+    overflow: hidden;
+    z-index: 9999;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    text-indent: -999px;
+} */
+#nav-button{
+    top: 10px;
+    right: 21px;
+    width: 36px;
+    height: 32px;
+    float:right;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    text-indent: -999px;
+}
+#nav-button span{
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin: 6px 0;
+    display: block;
+}
